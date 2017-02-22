@@ -50,3 +50,7 @@ gem 'haml-rails' # rake haml:erb2haml
 gem 'faye'
 gem 'thin', require: false
 gem 'render_sync'
+
+group :production do
+  gem 'pg', '0.18.4'
+end
