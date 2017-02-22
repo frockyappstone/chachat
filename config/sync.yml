@@ -27,7 +27,7 @@ test:
   async: false
 
 production:
-  server: "http://example.com/faye"
+  server: "http://localhost:9292/faye"
   adapter_javascript_url: "http://localhost:9292/faye/faye.js"
   adapter: "Faye"
   auth_token: "74dd5caf67fa8b8c5e767570f9d9ceaa31ebfd20dc0d41dc7b54cfed480824bc"
