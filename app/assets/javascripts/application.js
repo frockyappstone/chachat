@@ -67,7 +67,7 @@
             return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
         };
         postToServer = function(message){
-          $.post("/chats.json", {chat: { body: message.text }}, message.draw());
+          $.post("/chats.json", {chat: { body: message.text }});
           // var $form = $("#new_chat");
           // $form.find("input[type=text]").val(message.text);
           // $form.submit();
