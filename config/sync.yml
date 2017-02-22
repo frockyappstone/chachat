@@ -27,8 +27,8 @@ test:
   async: false
 
 production:
-  server: "http://localhost:9292/faye"
-  adapter_javascript_url: "http://localhost:9292/faye/faye.js"
+  server: "http://chachatcha.herokuapp.com/faye"
+  adapter_javascript_url: "http://chachatcha.herokuapp.com/faye/faye.js"
   adapter: "Faye"
   auth_token: "74dd5caf67fa8b8c5e767570f9d9ceaa31ebfd20dc0d41dc7b54cfed480824bc"
   async: true
