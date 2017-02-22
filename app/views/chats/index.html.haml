@@ -1,0 +1,26 @@
+.chat_window
+  .top_menu
+    .buttons
+      .button.close
+      .button.minimize
+      .button.maximize
+    .title Chat
+  %ul.messages
+    -# = render @chats
+    = sync partial: "list_row", collection: @chats
+    = sync_new partial: "list_row", resource: Chat.new
+  .bottom_wrapper.clearfix
+    .message_input_wrapper
+      %input.message_input{:placeholder => "Type your message here..."}/
+    .send_message
+      .icon
+      .text Send
+.message_template
+  %li.message
+    .avatar
+    .text_wrapper
+      .text
+
+= form_for Chat.new, html: { style: "display: none;" }, remote: true do |f|
+  = f.text_field :body
+  = f.submit
